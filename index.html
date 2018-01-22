@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<title>Game - estoure os balões!</title>
+		<link rel="icon" href="imagens/balao_azul_pequeno.png">
+
+		<!-- Bootstrap -->
+	    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="estilo.css" rel="stylesheet">
+
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+
+		<script language='Javascript'>
+			function iniciaJogo()
+			{
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				window.location.href = 'jogo.html?'+nivel_jogo; /* força a mudança de url e envia o parâmetro necessário (nivel_jogo) via get */
+
+				switch (nivel_jogo)
+				{
+					case '1': /* fácil */
+						break;
+
+					case '2': /* normal */
+						break; 
+
+					case '3': /* difícil */
+						break;
+				}
+
+			}
+		</script>
+	</head>
+
+
+	<body class="container">
+		<center>
+			<div class="img-background img-responsive">	
+
+				<img class="margem-cabecalho img-responsive" src="imagens/cabecalho.png">
+
+				<center>
+					<br/><br/><br/>
+					
+					<p class="nivel">Nível:</p>  
+					<select id="nivel_jogo" class="fonte-30">
+						<option value="1">Fácil</option>
+						<option value="2">Normal</option>
+						<option value="3">Difícil</option>
+					</select>
+					
+					<br/><br/><br/><br/><br/>
+
+					<img class="img-responsive cursor-mao" src="imagens/iniciar.png" onclick="iniciaJogo()">
+				</center>
+
+			</div>
+							
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		    <script src="bootstrap/js/bootstrap.min.js"></script>
+		</center>
+	</body>
+	
+</html>

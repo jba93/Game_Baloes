@@ -1,0 +1,55 @@
+.img-background{
+	background: url(imagens/bg.png) no-repeat; 
+	width: 752px; 
+	height: 574px;
+}
+
+.margem-cabecalho{
+	margin-top: 10px;
+	margin-bottom: 12px;
+}
+
+.nivel{
+	font-size: 40px; 
+	color: white;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px black;
+}
+
+.fonte-30{
+	font-size: 30px;
+	color: black;
+}
+
+.coluna-lateral{
+	float: left; 
+	height: 500px; 
+	width: 140px; 
+	background: white; 
+	border: 1px solid black; 
+	margin-right:12px; 
+	padding: 10px;
+}
+
+.cronometro-botoes{
+	width: 96px; 
+	height: 82px;
+}
+
+.estilo-cronometro{
+	background: url('imagens/cronometro.png') no-repeat; 
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+}
+
+.estilo-cenario{
+	background: url('imagens/cenario.png') no-repeat;
+	float: left; 
+	width: 600px; 
+	height: 500px; 
+}
+
+.cursor-mao{
+	cursor:  pointer;
+}
