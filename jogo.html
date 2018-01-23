@@ -31,8 +31,9 @@
 
 					<table>
 						<tr>
+							<!-- número de balões que ainda estão inteiros -->
 							<td><img src="imagens/balao_azul_grande.png" class="img-responsive"></td>
-							<td><span id="baloes_inteiros" class="fonte-30"></span></td> <!-- número de balões que ainda estão inteiros -->
+							<td><span id="baloes_inteiros" class="fonte-30"></span></td> 
 						</tr>
 					</table>
 
@@ -40,8 +41,9 @@
 
 					<table>
 						<tr>
+							<!-- número de balões que já foram estourados -->
 							<td><img src="imagens/balao_azul_grande_estourado.png" class="img-responsive"></td>
-							<td><span id="baloes_estourados" class="fonte-30""></span></td>  <!-- número de balões que já foram estourados -->
+							<td><span id="baloes_estourados" class="fonte-30"></span></td>  
 						</tr>
 					</table>
 
@@ -80,15 +82,19 @@
 					<!-- background-position: bottom; faz com que a altura da imagem comece a ser contada da parte de baixo para cima e não de cima para baixo -->
 
 			</div>
-
-			
-
-			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-		    <!-- Include all compiled plugins (below), or include individual files as needed -->
-		    <script src="bootstrap/js/bootstrap.min.js"></script>
 		</center>
+
+		<!-- som do balão estourando -->
+		<audio id="audio">
+		    <source src="som/estouro.mp3" type="audio/mpeg">
+		</audio>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+		
 	</body>
 	
 </html>

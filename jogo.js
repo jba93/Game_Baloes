@@ -88,8 +88,13 @@ function estourar(e)
 	// clica em balões já estourados
 	document.getElementById(id_balao).setAttribute("onclick", "");
 
+	//som do balão estourando
+	audio = document.getElementById('audio');
+    audio.play();
+
 	//substitui o src do balao inteiro pelo balao estourado
 	document.getElementById(id_balao).src = 'imagens/balao_azul_pequeno_estourado.png';
+
 	pontuacao(); //menos um balao inteiro
 }
 
